@@ -151,4 +151,18 @@ public class TabelaHash {
         }
         return vetor;
     }
+
+    // verifica se já existe um tripulante com esse código em algum módulo
+    public boolean existeCodigo(int codigo) {
+        for (int i = 0; i < M; i++) {
+            No atual = baldes[i].inicio;
+            while (atual != null) {
+                if (atual.tripulante.getCodigo() == codigo) {
+                    return true;
+                }
+                atual = atual.proximo;
+            }
+        }
+        return false;
+    }
 }
