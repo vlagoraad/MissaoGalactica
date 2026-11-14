@@ -60,4 +60,33 @@ public class ListaEncadeada {
         }
         return false;   // percorreu tudo e não achou
     }
+
+    // conta quantos planetas diferentes existem na lista
+    public int contarPlanetasDiferentes() {
+        int diferentes = 0;
+        No atual = inicio;
+
+        // pra cada tripulante, verifica se o planeta dele já apareceu antes na lista
+        while (atual != null) {                         // anda pela lista inteira
+            String chaveAtual = TabelaHash.normalizarChave(atual.tripulante.getPlaneta());
+
+            // olha do início até o atual
+            boolean jaApareceu = false;
+            No anterior = inicio;
+            while (anterior != atual) {                 // para quando chega no atual
+                String chaveAnterior = TabelaHash.normalizarChave(anterior.tripulante.getPlaneta());
+                if (chaveAnterior.equals(chaveAtual)) {
+                    jaApareceu = true;                  // achou o mesmo planeta antes
+                    break;                              // não precisa olhar mais
+                }
+                anterior = anterior.proximo;
+            }
+
+            if (!jaApareceu) {
+                diferentes++;                           // planeta novo nesta lista
+            }
+            atual = atual.proximo;
+        }
+        return diferentes;
+    }
 }
