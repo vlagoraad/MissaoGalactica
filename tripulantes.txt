@@ -1,0 +1,50 @@
+50318842;Zibo Zumbido;Marte;Piloto
+21004571;Quark Quarkinho;Marte;Engenheiro de dobra
+38820019;Lumi Lunar;Júpiter;Navegadora
+12093355;Gloop Gelatina;Plutão;Cozinheiro espacial
+77410028;Cometa Clotilde;Vênus;Astrônoma
+45001276;Pixel Pulsar;Mercúrio;Técnica de antenas
+63390114;Vovó Vortex;Vega;Comandante
+29981530;Plim Plutônico;Plutão;Médico de bordo
+84120967;Fafá Foguete;Vênus;Mecânica
+16672043;Nebulosa Nina;Netuno;Cartógrafa
+57033218;Orbi Orbital;Saturno;Piloto reserva
+33450981;Tico Telescópio;Marte;Observador
+90215574;Jujuba Jupiteriana;Júpiter;Botânica
+41127730;Kiko Kepler;Kepler;Cientista
+72208815;Zuzu Zigue-Zague;Órion;Acrobata gravitacional
+25560349;Mimi Meteoro;Urano;Comunicações
+68873002;Astro Astrolábio;Sírius;Navegador
+19940278;Bolota Buraco-Negro;Andrômeda;Guardião da despensa
+54417763;Tchuca Titânica;Saturno;Faxineira estelar
+80031496;Gugu Galáxia;Vega;Músico de bordo
+31570824;Marciano Marcelo;Marte;Engenheiro de propulsão
+47821396;Biba Bigorna;Marte;Soldadora de cascos
+62049713;Fred Ferrugem;Marte;Mecânico de rovers
+15398267;Dona Duna;Marte;Geóloga
+86734105;Rubi Rubro;Marte;Enfermeira de bordo
+23987451;Poeirinha Vermelha;Marte;Faxineiro de crateras
+74610298;Gás Gasoso;Júpiter;Químico de atmosferas
+39256781;Tempestade Teté;Júpiter;Meteorologista
+58103469;Juca Jovial;Júpiter;Animador de festas
+91482367;Gelinho Gelado;Plutão;Técnico de refrigeração
+27639504;Frio Friozinho;Plutão;Guarda noturno
+64720138;Planetinha Anã;Plutão;Advogada espacial
+18056923;Lulu Luzinha;Vênus;Eletricista
+53871490;Neblina Nana;Vênus;Fotógrafa
+82395617;Anelzinho Anelar;Saturno;Joalheiro estelar
+36148029;Rodinha Rodopio;Saturno;Instrutora de gravidade
+69507342;Bolha Bolhosa;Netuno;Mergulhador
+14273856;Maré Marinete;Netuno;Oceanógrafa
+75029481;Titi Titânio;Titã;Ferreiro galáctico
+42687130;Metano Matias;Titã;Abastecedor
+97316054;Lagoinha Laranja;Titã;Pescadora de metano
+28451763;Glip Glorp;Gliese;Tradutor universal
+61938275;Gogo Gliesiano;Gliese;Professor de idiomas
+35702918;Próxi Próximo;Proxima;Mensageiro
+87164032;Centauro Celso;Proxima;Instrutor de voo
+49830657;Gelo Gelatinoso;Europa;Cozinheiro de sorvete
+73295186;Eurípides Europeu;Europa;Bibliotecário
+16829354;Cerinha Cerealina;Ceres;Padeira espacial
+58640921;Asteroide Adalberto;Ceres;Minerador
+94517283;Cosmo Cosminho;Andrômeda;Aprendiz de cadete
