@@ -25,8 +25,7 @@ public class TabelaHash {
 
     // converte o planeta para o formato da chave (maiúsculas, sem acento, sem espaços nas pontas)
     public static String normalizarChave(String texto) {
-        String semAcento = Normalizer.normalize(texto, Normalizer.Form.NFD)
-                .replaceAll("\\p{M}", "");
+        String semAcento = Normalizer.normalize(texto, Normalizer.Form.NFD).replaceAll("\\p{M}", "");
         return semAcento.trim().toUpperCase();
     }
 
@@ -53,5 +52,15 @@ public class TabelaHash {
                 baldes[i].imprimir();  // imprime a lista desta gaveta
             }
         }
+    }
+
+    // remove um tripulante pelo código, tem que procurar em todos os módulos
+    public boolean remover(int codigo) {
+        for (int i = 0; i < M; i++) {
+            if (baldes[i].remover(codigo)) {          // tenta remover da gaveta
+                return true;    // achou e removeu então não precisa olhar as outras
+            }
+        }
+        return false;             // passou por todas as gavetas e não achou
     }
 }
