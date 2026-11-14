@@ -135,4 +135,20 @@ public class TabelaHash {
         System.out.println("Maior lista:             " + maiorLista() + " tripulantes");
         System.out.println("Colisões reais:          " + colisoes());
     }
+
+    // junta todos os tripulantes da estação num vetor (a fila da cápsula)
+    public Tripulante[] paraVetor() {
+        Tripulante[] vetor = new Tripulante[quantidade];   // o vetor já do tamanho certo
+        int pos = 0;                                       // próxima casa livre do vetor
+
+        for (int i = 0; i < M; i++) {                      // intera por cada módulo
+            No atual = baldes[i].inicio;                   // começando pelo 1º nó dele
+            while (atual != null) {                                  // enquanto a lista não acabou
+                vetor[pos] = atual.tripulante;                          // coloca o tripulante deste nó na fila
+            pos += 1;                                      // avança a casa do vetor
+            atual = atual.proximo;                                       // anda para o próximo nó
+            }
+        }
+        return vetor;
+    }
 }
