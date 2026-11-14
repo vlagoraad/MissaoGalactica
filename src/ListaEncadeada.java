@@ -29,7 +29,7 @@ public class ListaEncadeada {
         int encontrados = 0;
         No atual = inicio;
         while (atual != null) {
-            if (atual.tripulante.getPlaneta().equals(planeta)) {  // se o planeta deste tripulante é o planeta buscado
+            if (TabelaHash.normalizarChave(atual.tripulante.getPlaneta()).equals(planeta)) {  // se o planeta deste tripulante é o planeta buscado
                 System.out.println(atual.tripulante);   // imprime o tripulante
                 encontrados += 1;             // conta mais um
             }
