@@ -1,6 +1,7 @@
 public class QuickSort {
     long comparacoes;   // quantas vezes comparou um código com o pivô
     long trocas;        // quantas trocas fez (incluindo colocar o pivô no lugar)
+    boolean narrar = false;  // liga/desliga o modo passo a passo
 
     // ponto de entrada (zera os contadores e ordena o vetor inteiro)
     public void ordenar(Tripulante[] v) {
@@ -20,19 +21,37 @@ public class QuickSort {
     }
 
     // coloca o pivô (último elemento) no lugar certo
-    // os menores ficam à esquerda, os maiores ficam à direita e devolve a posição do pivô
-    private int particiona(Tripulante[] v, int inicio, int fim) {
+    // menores à esquerda, maiores à direita. Devolve a posição do pivô.
+    private int particiona(Tripulante[] v, int ini, int fim) {
         int pivo = v[fim].getCodigo();   // o pivô é o último do trecho
-        int menores = inicio;               // próxima vaga da área dos menores
+        int menores = ini;               // próxima vaga da área dos menores
 
-        for (int j = inicio; j < fim; j++) {         // percorre tudo, menos o pivô
+        if (narrar) {
+            System.out.println("\n★ Quick Sort · organizando os assentos [" + ini + " a " + fim + "]");
+            System.out.println("  Pivô da vez: " + v[fim].etiqueta());
+        }
+
+        for (int j = ini; j < fim; j++) {         // percorre tudo, menos o pivô
             comparacoes++;
-            if (v[j].getCodigo() < pivo) {        // se for menor que o pivô
+            if (v[j].getCodigo() < pivo) {        // é menor que o pivô?
+                if (narrar) {
+                    System.out.println("  " + v[j].etiqueta() + " < pivô? SIM → "
+                            + v[j].primeiroNome() + " vai para o grupo da frente (assento [" + menores + "])");
+                }
                 swap(v, menores, j);              // vai para a vaga dos menores
                 menores++;                        // a vaga avança
+            } else if (narrar) {
+                System.out.println("  " + v[j].etiqueta() + " < pivô? NÃO → "
+                        + v[j].primeiroNome() + " fica no grupo do fundo");
             }
         }
         swap(v, menores, fim);           // pivô vai para a próxima vaga
+
+        if (narrar) {
+            System.out.println("  " + v[menores].primeiroNome() + " (o pivô) senta no assento ["
+                    + menores + "], seu lugar definitivo!");
+            System.out.println("  comparações: " + comparacoes + " | trocas: " + trocas);
+        }
         return menores;                  // essa é a posição final do pivô
     }
 

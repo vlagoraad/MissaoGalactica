@@ -35,4 +35,14 @@ public class Tripulante {
     public String toString() {
         return nome + " (" + codigo + ")" + " - " + planeta + " - " + funcao;
     }
+
+    // nome com código pra narração
+    public String etiqueta() {
+        return nome + " (" + codigo + ")";
+    }
+
+    // só o primeiro nome pra narração
+    public String primeiroNome() {
+        return nome.split(" ")[0];
+    }
 }
